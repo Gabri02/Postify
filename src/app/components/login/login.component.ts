@@ -4,9 +4,9 @@ import { FormControl, Validators } from '@angular/forms';
 /** @title Form field with error messages */
 @Component({
   selector: 'app-signup',
-  templateUrl: './signup.component.html',
-  styleUrls: ['./signup.component.sass']
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.sass']
 })
-export class SignupComponent {
+export class LoginComponent {
 
 }
