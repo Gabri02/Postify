@@ -1,0 +1,62 @@
+<div
+  class="d-flex justify-content-center align-items-center flex-column h-100 w-100"
+>
+  <h1 class="mb-5">Signup</h1>
+  <form
+    class="d-flex flex-column justify-content-center"
+    (ngSubmit)="signup(form)"
+    #form="ngForm"
+  >
+    <mat-form-field>
+      <mat-label>Enter API-KEY</mat-label>
+      <input
+        matInput
+        placeholder="5bcxxxxxxxxa54"
+        required
+        type="text"
+        name="apiKey"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Chose Username</mat-label>
+      <input
+        matInput
+        placeholder="Username"
+        required
+        type="text"
+        [(ngModel)]="user.name"
+        name="username"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input
+        matInput
+        placeholder="example@email.com"
+        required
+        type="email"
+        [(ngModel)]="user.email"
+        name="email"
+      />
+    </mat-form-field>
+    <mat-radio-group aria-label="Select a gender" [(ngModel)]="user.gender" name="gender">
+      <mat-radio-button value="male">Male</mat-radio-button>
+      <mat-radio-button value="female">Female</mat-radio-button>
+    </mat-radio-group>
+    <mat-radio-group aria-label="Select a status" [(ngModel)]="user.status" name="status">
+      <mat-radio-button value="active">active</mat-radio-button>
+      <mat-radio-button value="inactive">inactive</mat-radio-button>
+    </mat-radio-group>
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input
+        matInput
+        required
+        type="password"
+        name="password"
+        autocomplete="current-password"
+      />
+    </mat-form-field>
+    <button mat-button type="submit">Signup</button>
+  </form>
+</div>
