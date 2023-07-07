@@ -12,7 +12,6 @@ import { HomeComponent } from './components/home/home.component';
 import { UsersComponent } from './components/users/users.component';
 import { UserComponent } from './components/user/user.component';
 import { LoginComponent } from './components/login/login.component';
-import { SignupComponent } from './components/signup/signup.component';
 import { PostComponent } from './components/post/post.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
@@ -24,7 +23,6 @@ import { FormsModule } from '@angular/forms';
     UsersComponent,
     UserComponent,
     LoginComponent,
-    SignupComponent,
     PostComponent,
   ],
   imports: [
